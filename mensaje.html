@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>Contactos</title>
+		<meta chaset="utf-8"/>
+
+		<style type="text/css">
+			body{
+				font-family:Arial, helvetica, sans-serif;
+
+				}
+			.content {
+				display: flex;
+				justify-content: center;
+
+			}
+			.contato {
+				width: 100%;
+				max-width: 500px;
+
+			}
+
+			.form {
+
+				display: flex;
+				flex-direction: column;
+
+			}				
+			.field {
+				font-size: 20px;
+				padding: 10px;
+				margin-bottom: 15px;
+				border: 1px solid #ddd;
+				border-radius: 5px;
+				font-family: Arial, helvetica, sans-serif;
+
+			}
+			textarea {
+				height: 250px;
+			}
+
+		 	header {
+ 				 height: auto;
+	 			 background: url("fotosp/historia2.jpg");
+			}
+
+			
+		</style>
+			
+	</head>
+		<body>
+			<Header>
+				<section class="content">
+					<div class="contato">
+						<h1> Deseja enviar uma mensagem?</h1>
+						<form class="form" method="post" action="./email.php">
+							<input class="field" name="name" placeholder="Nome">
+							<input class="field" name="email" placeholder="E-mail ou telefono">
+							<textarea name="mesage" placeholder="digite o msj"></textarea>
+							<input class="field" type="submit" value="enviar">
+						</form>
+					</div>
+				</section>
+			</Header>
+		</body>
+</html>
+	
