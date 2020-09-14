@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="estilosd.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <title>pfabreuave</title>
   </head>
+
   <body>
     <header>
       <div class="container">
@@ -63,46 +65,31 @@
       </div>
 
     </section>
-    <form action="">
+     <footer>
+      <div id="contacteme"class="footer_form">
 
-        <div class="contactame">
-             <h2>Contate-me</h2>
-             <h3>Para entrar em contato comigo</h3>
-             <p>
-                 Você pode enviar uma mensagem nos espaços indicados abaixo. Você
-                 certamente terá uma resposta
-             </p>
-             <p>
-                 Obrigado por participar da minha página.
-             </p>
-        </div>
-        
+        <h1>Contatame</h1>
 
-            <label>Nome</label>
-            <input type="text" required /><span></span>
+        <form action="" class="formulario" id ="formulario" name="formulario">
 
-            <label>Email</label>
-            <input type="email" required /><span></span>
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" /><span></span>
 
-            <label>Mensage</label>
-            <textarea name="" rows="3"></textarea><span></span>
+            <label for="email">Email</label>
+            <input type="email" name="email"  minlength="10"  />
 
+            <label for="mensagem">Mensage</label>
+            <textarea type="text" name="mensagem" class="mensagem" minlength="8"  rows="3"></textarea><span></span>
 
-      <div class="btn"><button type="sumit">Enviar</button></div>
-    </form>
-    <footer>
+          <ul class="error" id="error"></ul>
+          <input type="submit" class="btn" value="Enviar">
+        </form>  
+      </div>                        
       <p><strong>Rio de Janeiro - Brasil - 2020</strong></p>
     </footer>
-    <script>
-    	
-    		function enviaYcerrar() {
-    				if (confirm('Obrigado por me visitar')) {
-      					
-      					window.close();
-    				}
-			}
 
-    </script>
+    <script src="javascripts.js"></script>
+    
   </body>
   
 </html>
