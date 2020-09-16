@@ -14,28 +14,7 @@
 		<h1>Projetos no repositorio do GitHub</h1>
 		<div id="contenido"></div>
 	</header>
+ <script src="consultagh.js"></script>
 
-
-
-	<!-- ----------- github api----------------- -->
-<script type="text/javascript">
-	var contenido = document.querySelector('#contenido')
-	fetch('https://api.github.com/users/pfabreuave/repos')
-		.then(function(response){
-			return response.json()
-		})
-		.then(function(data){
-			console.log(data.length)
-			 var cont = 0
-			 for(cont=0;cont<data.length;cont++){ 
- 		    	 
-				
-			 contenido.innerHTML +=` <div class="card">
-			<a href="${data[cont].html_url}" target="blank_">  ${data[cont].name} </a>
- 			</div>`
-				
-			}
-		})	
-</script>
 </body>
 </html>
